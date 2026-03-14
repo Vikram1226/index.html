@@ -297,7 +297,7 @@
   }
 
   .services-grid {
-    display: grid; grid-template-columns: repeat(3, 1fr);
+    display: grid; grid-template-columns: repeat(4, 1fr);
     gap: 1px; background: var(--surface2);
     border: 1px solid var(--surface2);
   }
@@ -630,6 +630,18 @@
     0%   { transform:translate(-50%,-50%) scale(0); opacity:0.6; }
     100% { transform:translate(-50%,-50%) scale(8); opacity:0; }
   }
+  @keyframes webBar1 {
+    0%,100% { width: 60px; } 50% { width: 100px; }
+  }
+  @keyframes webBar2 {
+    0%,100% { width: 80px; } 50% { width: 50px; }
+  }
+  @keyframes webBar3 {
+    0%,100% { width: 40px; } 50% { width: 90px; }
+  }
+  @keyframes webPulse {
+    0%,100% { transform: scale(1); } 50% { transform: scale(1.2); }
+  }
 </style>
 </head>
 <body>
@@ -847,6 +859,20 @@
       <p class="service-desc">Strategic social media campaigns, content creation, and growth hacking to expand your online presence.</p>
       <div class="service-arrow">↗</div>
     </div>
+    <div class="service-card">
+      <div class="service-num">04</div>
+      <div class="anim-web" style="position:relative;height:64px;display:flex;align-items:center;justify-content:center;gap:6px;margin-bottom:24px;">
+        <div style="display:flex;flex-direction:column;gap:5px;">
+          <div class="web-bar" style="height:8px;border-radius:4px;background:var(--accent);opacity:0.9;animation:webBar1 1.8s ease-in-out infinite;"></div>
+          <div class="web-bar" style="height:8px;border-radius:4px;background:var(--accent);opacity:0.6;animation:webBar2 1.8s ease-in-out infinite 0.2s;"></div>
+          <div class="web-bar" style="height:8px;border-radius:4px;background:var(--accent);opacity:0.4;animation:webBar3 1.8s ease-in-out infinite 0.4s;"></div>
+        </div>
+        <div style="font-size:32px;animation:webPulse 2s ease-in-out infinite;">🌐</div>
+      </div>
+      <div class="service-name">Web Development</div>
+      <p class="service-desc">Clean, fast & responsive websites and portfolios built with modern technologies that look stunning on every device.</p>
+      <div class="service-arrow">↗</div>
+    </div>
   </div>
 </section>
 
@@ -885,9 +911,9 @@
         <div class="contact-icon">📞</div>
         <div><span class="contact-label">Phone</span><span class="contact-value">+91 9150405564</span></div>
       </a>
-      <a href="/cdn-cgi/l/email-protection#683e1a0905585a5a58280f05090104460b0705" class="contact-item">
+      <a href="mailto:vram0220@gmail.com" class="contact-item">
         <div class="contact-icon">✉️</div>
-        <div><span class="contact-label">Email</span><span class="contact-value"><span class="__cf_email__" data-cfemail="cb9db9aaa6fbf9f9fb8baca6aaa2a7e5a8a4a6">[email&#160;protected]</span></span></div>
+        <div><span class="contact-label">Email</span><span class="contact-value">vram0220@gmail.com</span></div>
       </a>
       <div style="margin-top:36px;">
         <a href="https://instagram.com/vikram_57_X" target="_blank" class="social-link">
